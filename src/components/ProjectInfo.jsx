@@ -37,7 +37,7 @@ export default function ProjectInfo() {
                     {team.map((member, index) => (
                         <div
                             key={index}
-                            className="border border-indigo-200 p-4 rounded-xl shadow-sm bg-indigo-50 flex flex-row justify-between items-center"
+                            className="border border-indigo-200 p-4 rounded-xl shadow-sm bg-indigo-50 flex md:flex-row flex-col justify-between items-center sm:mt-3"
                         >
                             {/* Left side - details */}
                             <div className="flex flex-col space-y-1">
@@ -58,7 +58,7 @@ export default function ProjectInfo() {
                             <img
                                 src={member.image}
                                 alt={member.name}
-                                className="w-20 h-20  shadow-md border-2 border-indigo-300"
+                                className="w-20 h-20 shadow-md border-2 border-indigo-300"
                             />
                         </div>
                     ))}
